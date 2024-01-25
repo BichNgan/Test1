@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText edtSoA, edtSoB;
-    Button btnPlus;
+    Button btnPlus, btnTru;
     TextView tvKq;
 
 
@@ -18,11 +18,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //---------------------------
         addControls();
         addEvents();
-
-
-
     }
     //Gắn id cho các views
     void addControls()
@@ -43,5 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 tvKq.setText("Kết quả là : "+ String.valueOf(a+b));
             }
         });
+
+
     }
 }
